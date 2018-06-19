@@ -1,0 +1,41 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="7">Suite</th></tr>
+<tr><td><a href="#t0">Test</a></td><td class="num">5</td><td class="num">0</td><td class="num attn">1</td><td class="num">745,873</td><td></td><td></td></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">satguru.scripts.HotelTest</td><td><a href="#m0">HotelBook</a></td><td rowspan="1">1529324681491</td><td rowspan="1">42050</td></tr><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">satguru.scripts.FlightPlusInsuranceTest</td><td><a href="#m1">RoundtripTckt</a></td><td rowspan="1">1529324312403</td><td rowspan="1">139116</td></tr><tr class="passedodd"><td rowspan="1">satguru.scripts.InsuranceBooking</td><td><a href="#m2">InsuranceTest</a></td><td rowspan="1">1529324456731</td><td rowspan="1">91340</td></tr><tr class="passedeven"><td rowspan="1">satguru.scripts.MulticityTripTest</td><td><a href="#m3">MulticityTckt</a></td><td rowspan="1">1529324902873</td><td rowspan="1">149428</td></tr><tr class="passedodd"><td rowspan="1">satguru.scripts.OnewayFlightTest</td><td><a href="#m4">OnewatTckt</a></td><td rowspan="1">1529324731482</td><td rowspan="1">160063</td></tr><tr class="passedeven"><td rowspan="1">satguru.scripts.RoundTripTest</td><td><a href="#m5">RoundtripTckt</a></td><td rowspan="1">1529324552692</td><td rowspan="1">123011</td></tr></tbody>
+</table>
+<h2>Test</h2><h3 id="m0">satguru.scripts.HotelTest#HotelBook</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.WebDriverException: unknown error: Element &lt;a href=&quot;javascript:void(0);&quot; data-ng-click=&quot;hotelReview(hotelInfomation);&quot; class=&quot;btn orange-btn&quot;&gt;...&lt;/a&gt; is not clickable at point (1170, 487). Other element would receive the click: &lt;div class=&quot;modal fade in&quot; data-backdrop=&quot;static&quot; data-keyboard=&quot;false&quot; id=&quot;bookingLoader&quot; style=&quot;display: block; padding-right: 15px;&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=65.0.3325.181)
+  (Driver info: chromedriver=2.36.540471 (9c759b81a907e70363c6312294d30b6ccccc2752),platform=Linux 4.10.0-42-generic x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 49 milliseconds
+Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;ttuser10-Lenovo-S510&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;4.10.0-42-generic&apos;, java.version: &apos;1.8.0_162&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.36.540471 (9c759b81a907e70363c6312294d30b6ccccc2752), userDataDir=/tmp/.org.chromium.Chromium.YiCCm7}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=65.0.3325.181, platform=LINUX, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: 495fe08030e1919aa3311726279df943
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:272)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:82)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy8.click(Unknown Source)
+	at Portal.Pageobjects.hotels.HotelInfoPage.ClikOnBukBtn(HotelInfoPage.java:36)
+	at satguru.scripts.HotelTest.HotelBook(HotelTest.java:55)
+... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">satguru.scripts.FlightPlusInsuranceTest#RoundtripTckt</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">satguru.scripts.InsuranceBooking#InsuranceTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">satguru.scripts.MulticityTripTest#MulticityTckt</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">satguru.scripts.OnewayFlightTest#OnewatTckt</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">satguru.scripts.RoundTripTest#RoundtripTckt</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>
