@@ -17,8 +17,7 @@ import satguru.pageobjects.BasePage;
 import satguru.pageobjects.TTNCLoginPage;
 import satguru.scripts.LoginTest;
 
-
-public class SpicejetMealandBaggageBook extends LoginTest {
+public class AirIndiaExpressSSR extends LoginTest{
 	@Test
 	public void OnewayGDSConnectingFlight() throws InterruptedException {
 		TTNCLoginPage blp = new TTNCLoginPage(driver);
@@ -31,12 +30,12 @@ public class SpicejetMealandBaggageBook extends LoginTest {
 		WaitStatementLib.implicitWaitforSeconds(driver, 10);
 		bp.booking(driver);
 		bp.BranchBooking(driver);
-		FlightPage fp = new FlightPage(driver);
 		Thread.sleep(3000);
+		FlightPage fp = new FlightPage(driver);
 		WaitStatementLib.implicitWaitforMinutes(driver, 2);
-
-		fp.Scenario1Oneway(ExcelUtils.readData("Sheet3", 0, 1), ExcelUtils.readData("Sheet3", 1, 1));
-		fp.preferredAirlineselect(ExcelUtils.readData("sheet3", 2, 4));
+		fp.Scenario1Oneway(ExcelUtils.readData("Sheet3", 0, 6), ExcelUtils.readData("Sheet3", 1, 6));
+		fp.preferredAirlineselect("Air India Express");
+		
 		fp.PassengerCombination1(driver);
 		System.out.println("Oneway input is successful");
 		Flightresult fr = new Flightresult(driver);
@@ -60,6 +59,9 @@ public class SpicejetMealandBaggageBook extends LoginTest {
 		pdp.selectmeal();
 		pdp.selectBaggage();
 		pdp.selectSeat();
+//		pdp.SelectBaggageMealAdult1();
+//		pdp.SelectBaggageMealchild1();
+
 		pdp.ProceedFrBuk();
 		PaymentPage pp = new PaymentPage(driver);
 		WaitStatementLib.implicitWaitforMinutes(driver, 2);
@@ -69,7 +71,6 @@ public class SpicejetMealandBaggageBook extends LoginTest {
 		WaitStatementLib.implicitWaitforMinutes(driver, 1);
 		cp.ConfirmBooking();
 
-	}
+
 }
-
-
+}

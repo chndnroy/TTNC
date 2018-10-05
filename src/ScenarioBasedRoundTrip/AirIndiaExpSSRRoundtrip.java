@@ -1,4 +1,4 @@
-package ScenarioBasedFlightScripts;
+package ScenarioBasedRoundTrip;
 
 import static org.testng.Assert.assertEquals;
 
@@ -17,10 +17,10 @@ import satguru.pageobjects.BasePage;
 import satguru.pageobjects.TTNCLoginPage;
 import satguru.scripts.LoginTest;
 
+public class AirIndiaExpSSRRoundtrip extends LoginTest {
 
-public class SpicejetMealandBaggageBook extends LoginTest {
 	@Test
-	public void OnewayGDSConnectingFlight() throws InterruptedException {
+	public void RoundConnectingFlight() throws InterruptedException {
 		TTNCLoginPage blp = new TTNCLoginPage(driver);
 		blp.login(ExcelUtils.readData("Sheet1", 7, 1), ExcelUtils.readData("Sheet1", 8, 1));
 
@@ -32,23 +32,26 @@ public class SpicejetMealandBaggageBook extends LoginTest {
 		bp.booking(driver);
 		bp.BranchBooking(driver);
 		FlightPage fp = new FlightPage(driver);
-		Thread.sleep(3000);
 		WaitStatementLib.implicitWaitforMinutes(driver, 2);
+		System.out.println("Flight page is open");
+		WaitStatementLib.implicitWaitforMinutes(driver, 2);
+		fp.RoundtripPage();
+		System.out.println("Roundtrip Page is open");
+		fp.RoundTripLCCInput(ExcelUtils.readData("Sheet3", 0, 7), ExcelUtils.readData("Sheet3", 1, 7));
+		fp.preferredAirlineRoundtripselect("Air India Express");
+		fp.PassengerRoundCombination1(driver);
 
-		fp.Scenario1Oneway(ExcelUtils.readData("Sheet3", 0, 1), ExcelUtils.readData("Sheet3", 1, 1));
-		fp.preferredAirlineselect(ExcelUtils.readData("sheet3", 2, 4));
-		fp.PassengerCombination1(driver);
-		System.out.println("Oneway input is successful");
+		System.out.println("ROundtrip input is successful");
 		Flightresult fr = new Flightresult(driver);
 		WaitStatementLib.implicitWaitforMinutes(driver, 4);
-		fr.book(driver);
+		fr.BookLCCSpecial(driver);
 		System.out.println("Book button clicked on Search result page");
 		CrossSellingPage csp = new CrossSellingPage(driver);
 		WaitStatementLib.implicitWaitforMinutes(driver, 2);
 		csp.noThanks();
 		FlightDetailsPage fdp = new FlightDetailsPage(driver);
 		WaitStatementLib.implicitWaitforMinutes(driver, 2);
-		fdp.OnewaydetailPage();
+		fdp.clickContinue(driver);
 		PassenegerDetailsPage pdp = new PassenegerDetailsPage(driver);
 		WaitStatementLib.implicitWaitforMinutes(driver, 2);
 		pdp.selectPassenger(driver);
@@ -57,19 +60,19 @@ public class SpicejetMealandBaggageBook extends LoginTest {
 		Thread.sleep(5000);
 		pdp.selectChildPassenger1(driver);
 		Thread.sleep(5000);
-		pdp.selectmeal();
+		// pdp.selectmeal();
+		// pdp.ReturnMeal();
 		pdp.selectBaggage();
-		pdp.selectSeat();
+		pdp.ReturnBaggage();
+		// pdp.selectSeat();
+
 		pdp.ProceedFrBuk();
 		PaymentPage pp = new PaymentPage(driver);
 		WaitStatementLib.implicitWaitforMinutes(driver, 2);
-		pp.walletPay();
-		System.out.println("Wallet payment is done");
-		ConfirmationPage cp = new ConfirmationPage(driver);
-		WaitStatementLib.implicitWaitforMinutes(driver, 1);
-		cp.ConfirmBooking();
+		// System.out.println("Wallet payment is done");
+		// ConfirmationPage cp = new ConfirmationPage(driver);
+		// WaitStatementLib.implicitWaitforMinutes(driver, 1);
+		// cp.ConfirmBooking();
 
 	}
 }
-
-

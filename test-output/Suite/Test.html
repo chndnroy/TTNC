@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>5/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Jun 18 17:48:26 IST 2018</td>
+<td>Started on:</td><td>Thu Sep 20 11:22:14 IST 2018</td>
 </tr>
-<tr><td>Total time:</td><td>745 seconds (745873 ms)</td>
+<tr><td>Total time:</td><td>54 seconds (54654 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,51 +75,28 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='satguru.scripts.HotelTest.HotelBook()'><b>HotelBook</b><br>Test class: satguru.scripts.HotelTest</td>
-<td><div><pre>org.openqa.selenium.WebDriverException: unknown error: Element &lt;a href=&quot;javascript:void(0);&quot; data-ng-click=&quot;hotelReview(hotelInfomation);&quot; class=&quot;btn orange-btn&quot;&gt;...&lt;/a&gt; is not clickable at point (1170, 487). Other element would receive the click: &lt;div class=&quot;modal fade in&quot; data-backdrop=&quot;static&quot; data-keyboard=&quot;false&quot; id=&quot;bookingLoader&quot; style=&quot;display: block; padding-right: 15px;&quot;&gt;...&lt;/div&gt;
-  (Session info: chrome=65.0.3325.181)
-  (Driver info: chromedriver=2.36.540471 (9c759b81a907e70363c6312294d30b6ccccc2752),platform=Linux 4.10.0-42-generic x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 49 milliseconds
+<td title='ScenarioBasedFlightScripts.FlyDubaiBook.OnewayGDSConnectingFlight()'><b>OnewayGDSConnectingFlight</b><br>Test class: ScenarioBasedFlightScripts.FlyDubaiBook</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: Cannot locate element with text: 
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
 System info: host: &apos;ttuser10-Lenovo-S510&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;4.10.0-42-generic&apos;, java.version: &apos;1.8.0_162&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.36.540471 (9c759b81a907e70363c6312294d30b6ccccc2752), userDataDir=/tmp/.org.chromium.Chromium.YiCCm7}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=65.0.3325.181, platform=LINUX, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
-Session ID: 495fe08030e1919aa3311726279df943
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:272)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:82)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at com.sun.proxy.$Proxy8.click(Unknown Source)
-	at Portal.Pageobjects.hotels.HotelInfoPage.ClikOnBukBtn(HotelInfoPage.java:36)
-	at satguru.scripts.HotelTest.HotelBook(HotelTest.java:55)
-... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace681639276", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace681639276'><pre>org.openqa.selenium.WebDriverException: unknown error: Element &lt;a href=&quot;javascript:void(0);&quot; data-ng-click=&quot;hotelReview(hotelInfomation);&quot; class=&quot;btn orange-btn&quot;&gt;...&lt;/a&gt; is not clickable at point (1170, 487). Other element would receive the click: &lt;div class=&quot;modal fade in&quot; data-backdrop=&quot;static&quot; data-keyboard=&quot;false&quot; id=&quot;bookingLoader&quot; style=&quot;display: block; padding-right: 15px;&quot;&gt;...&lt;/div&gt;
-  (Session info: chrome=65.0.3325.181)
-  (Driver info: chromedriver=2.36.540471 (9c759b81a907e70363c6312294d30b6ccccc2752),platform=Linux 4.10.0-42-generic x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 49 milliseconds
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:151)
+	at satguru.generic.DropdownLib.Choosebytext(DropdownLib.java:16)
+	at satguru.generic.DropdownLib.SelectByTextFromDropdown(DropdownLib.java:27)
+	at satguru.pageobjects.BasePage.BranchBooking(BasePage.java:56)
+	at ScenarioBasedFlightScripts.FlyDubaiBook.OnewayGDSConnectingFlight(FlyDubaiBook.java:33)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace788905599", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace788905599'><pre>org.openqa.selenium.NoSuchElementException: Cannot locate element with text: 
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
 System info: host: &apos;ttuser10-Lenovo-S510&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;4.10.0-42-generic&apos;, java.version: &apos;1.8.0_162&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.36.540471 (9c759b81a907e70363c6312294d30b6ccccc2752), userDataDir=/tmp/.org.chromium.Chromium.YiCCm7}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=65.0.3325.181, platform=LINUX, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
-Session ID: 495fe08030e1919aa3311726279df943
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:272)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:82)
-	at sun.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at com.sun.proxy.$Proxy8.click(Unknown Source)
-	at Portal.Pageobjects.hotels.HotelInfoPage.ClikOnBukBtn(HotelInfoPage.java:36)
-	at satguru.scripts.HotelTest.HotelBook(HotelTest.java:55)
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:151)
+	at satguru.generic.DropdownLib.Choosebytext(DropdownLib.java:16)
+	at satguru.generic.DropdownLib.SelectByTextFromDropdown(DropdownLib.java:27)
+	at satguru.pageobjects.BasePage.BranchBooking(BasePage.java:56)
+	at ScenarioBasedFlightScripts.FlyDubaiBook.OnewayGDSConnectingFlight(FlyDubaiBook.java:33)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -146,41 +123,8 @@ Session ID: 495fe08030e1919aa3311726279df943
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>42</td>
-<td>satguru.scripts.HotelTest@467aecef</td></tr>
-</table><p>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='satguru.scripts.InsuranceBooking.InsuranceTest()'><b>InsuranceTest</b><br>Test class: satguru.scripts.InsuranceBooking</td>
-<td></td>
-<td>91</td>
-<td>satguru.scripts.InsuranceBooking@3cb1ffe6</td></tr>
-<tr>
-<td title='satguru.scripts.MulticityTripTest.MulticityTckt()'><b>MulticityTckt</b><br>Test class: satguru.scripts.MulticityTripTest</td>
-<td></td>
-<td>149</td>
-<td>satguru.scripts.MulticityTripTest@2a742aa2</td></tr>
-<tr>
-<td title='satguru.scripts.OnewayFlightTest.OnewatTckt()'><b>OnewatTckt</b><br>Test class: satguru.scripts.OnewayFlightTest</td>
-<td></td>
-<td>160</td>
-<td>satguru.scripts.OnewayFlightTest@4d50efb8</td></tr>
-<tr>
-<td title='satguru.scripts.FlightPlusInsuranceTest.RoundtripTckt()'><b>RoundtripTckt</b><br>Test class: satguru.scripts.FlightPlusInsuranceTest</td>
-<td></td>
-<td>139</td>
-<td>satguru.scripts.FlightPlusInsuranceTest@7d70d1b1</td></tr>
-<tr>
-<td title='satguru.scripts.RoundTripTest.RoundtripTckt()'><b>RoundtripTckt</b><br>Test class: satguru.scripts.RoundTripTest</td>
-<td></td>
-<td>123</td>
-<td>satguru.scripts.RoundTripTest@3dfc5fb8</td></tr>
+<td>48</td>
+<td>ScenarioBasedFlightScripts.FlyDubaiBook@4b553d26</td></tr>
 </table><p>
 </body>
 </html>

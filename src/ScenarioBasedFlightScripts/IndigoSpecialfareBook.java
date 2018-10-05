@@ -57,9 +57,9 @@ public class IndigoSpecialfareBook extends LoginTest {
 		Thread.sleep(5000);
 		pdp.selectChildPassenger1(driver);
 		Thread.sleep(5000);
-		pdp.SelectBaggageMealAdult1();
-		pdp.SelectBaggageMealAdult2();
-		pdp.SelectBaggageMealchild1();
+		pdp.selectmeal();
+		pdp.selectBaggage();
+		pdp.selectSeat();
 		pdp.ProceedFrBuk();
 		PaymentPage pp = new PaymentPage(driver);
 		WaitStatementLib.implicitWaitforMinutes(driver, 2);

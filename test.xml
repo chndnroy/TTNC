@@ -4,7 +4,7 @@
   <test thread-count="5" name="Test">
   <parameter name="browser" value="chrome"></parameter>
     <classes>
-      <class name="satguru.scripts.HotelTest"/>
+      <class name="ScenarioBasedFlightScripts.FlyDubaiBook"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

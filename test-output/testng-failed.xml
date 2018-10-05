@@ -4,13 +4,13 @@
   <test thread-count="5" name="Test(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="satguru.scripts.HotelTest">
+      <class name="ScenarioBasedFlightScripts.FlyDubaiBook">
         <methods>
+          <include name="OnewayGDSConnectingFlight"/>
           <include name="postCondition"/>
-          <include name="HotelBook"/>
           <include name="preCondition"/>
         </methods>
-      </class> <!-- satguru.scripts.HotelTest -->
+      </class> <!-- ScenarioBasedFlightScripts.FlyDubaiBook -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
