@@ -23,7 +23,8 @@ public class LoginTest extends BaseLib{
 		BasePage bp=new BasePage(driver);
 		WaitStatementLib.implicitWaitforSeconds(driver, 10);
 		bp.booking(driver);
-		bp.BranchBooking(driver);
+	//	bp.BranchBooking(driver);
+		
 		}
 
 }

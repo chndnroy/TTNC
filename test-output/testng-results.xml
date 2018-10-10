@@ -17,12 +17,12 @@
       <![CDATA[Browser closed]]>
     </line>
   </reporter-output>
-  <suite name="Suite" duration-ms="54654" started-at="2018-09-20T05:52:14Z" finished-at="2018-09-20T05:53:09Z">
+  <suite name="Suite" duration-ms="146167" started-at="2018-10-05T12:23:27Z" finished-at="2018-10-05T12:25:53Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="54654" started-at="2018-09-20T05:52:14Z" finished-at="2018-09-20T05:53:09Z">
-      <class name="ScenarioBasedFlightScripts.FlyDubaiBook">
-        <test-method status="PASS" signature="preCondition(java.lang.String)[pri:0, instance:ScenarioBasedFlightScripts.FlyDubaiBook@4b553d26]" name="preCondition" is-config="true" duration-ms="6316" started-at="2018-09-20T05:52:14Z" finished-at="2018-09-20T05:52:21Z">
+    <test name="Test" duration-ms="146167" started-at="2018-10-05T12:23:27Z" finished-at="2018-10-05T12:25:53Z">
+      <class name="ScenarioBasedFlightScripts.AirIndiaExpressSSR">
+        <test-method status="PASS" signature="preCondition(java.lang.String)[pri:0, instance:ScenarioBasedFlightScripts.AirIndiaExpressSSR@4b553d26]" name="preCondition" is-config="true" duration-ms="4760" started-at="2018-10-05T12:23:27Z" finished-at="2018-10-05T12:23:32Z">
           <params>
             <param index="0">
               <value>
@@ -39,26 +39,46 @@
             </line>
           </reporter-output>
         </test-method> <!-- preCondition -->
-        <test-method status="FAIL" signature="OnewayGDSConnectingFlight()[pri:0, instance:ScenarioBasedFlightScripts.FlyDubaiBook@4b553d26]" name="OnewayGDSConnectingFlight" duration-ms="48139" started-at="2018-09-20T05:52:21Z" finished-at="2018-09-20T05:53:09Z">
-          <exception class="org.openqa.selenium.NoSuchElementException">
+        <test-method status="FAIL" signature="OnewayGDSConnectingFlight()[pri:0, instance:ScenarioBasedFlightScripts.AirIndiaExpressSSR@4b553d26]" name="OnewayGDSConnectingFlight" duration-ms="141216" started-at="2018-10-05T12:23:32Z" finished-at="2018-10-05T12:25:53Z">
+          <exception class="org.openqa.selenium.ElementNotVisibleException">
             <message>
-              <![CDATA[Cannot locate element with text: 
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+              <![CDATA[element not visible
+  (Session info: chrome=67.0.3396.99)
+  (Driver info: chromedriver=2.36.540471 (9c759b81a907e70363c6312294d30b6ccccc2752),platform=Linux 4.10.0-42-generic x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 120.02 seconds
 Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
 System info: host: 'ttuser10-Lenovo-S510', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.10.0-42-generic', java.version: '1.8.0_162'
-Driver info: driver.version: unknown]]>
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.36.540471 (9c759b81a907e70363c6312294d30b6ccccc2752), userDataDir=/tmp/.org.chromium.Chromium.v74P2n}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=67.0.3396.99, platform=LINUX, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: 6de53d03009046352525032895857156]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: Cannot locate element with text: 
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+              <![CDATA[org.openqa.selenium.ElementNotVisibleException: element not visible
+  (Session info: chrome=67.0.3396.99)
+  (Driver info: chromedriver=2.36.540471 (9c759b81a907e70363c6312294d30b6ccccc2752),platform=Linux 4.10.0-42-generic x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 120.02 seconds
 Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
 System info: host: 'ttuser10-Lenovo-S510', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.10.0-42-generic', java.version: '1.8.0_162'
-Driver info: driver.version: unknown
-at org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:151)
-at satguru.generic.DropdownLib.Choosebytext(DropdownLib.java:16)
-at satguru.generic.DropdownLib.SelectByTextFromDropdown(DropdownLib.java:27)
-at satguru.pageobjects.BasePage.BranchBooking(BasePage.java:56)
-at ScenarioBasedFlightScripts.FlyDubaiBook.OnewayGDSConnectingFlight(FlyDubaiBook.java:33)
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.36.540471 (9c759b81a907e70363c6312294d30b6ccccc2752), userDataDir=/tmp/.org.chromium.Chromium.v74P2n}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=67.0.3396.99, platform=LINUX, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: 6de53d03009046352525032895857156
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:272)
+at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:96)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at com.sun.proxy.$Proxy8.sendKeys(Unknown Source)
+at Portal.Pageobjects.flights.FlightPage.preferredAirlineselect(FlightPage.java:204)
+at ScenarioBasedFlightScripts.AirIndiaExpressSSR.OnewayGDSConnectingFlight(AirIndiaExpressSSR.java:37)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -86,15 +106,15 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- org.openqa.selenium.ElementNotVisibleException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- OnewayGDSConnectingFlight -->
-        <test-method status="PASS" signature="postCondition(org.testng.ITestResult)[pri:0, instance:ScenarioBasedFlightScripts.FlyDubaiBook@4b553d26]" name="postCondition" is-config="true" duration-ms="172" started-at="2018-09-20T05:53:09Z" finished-at="2018-09-20T05:53:09Z">
+        <test-method status="PASS" signature="postCondition(org.testng.ITestResult)[pri:0, instance:ScenarioBasedFlightScripts.AirIndiaExpressSSR@4b553d26]" name="postCondition" is-config="true" duration-ms="164" started-at="2018-10-05T12:25:53Z" finished-at="2018-10-05T12:25:53Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=OnewayGDSConnectingFlight status=FAILURE method=FlyDubaiBook.OnewayGDSConnectingFlight()[pri:0, instance:ScenarioBasedFlightScripts.FlyDubaiBook@4b553d26] output={null}]]]>
+                <![CDATA[[TestResult name=OnewayGDSConnectingFlight status=FAILURE method=AirIndiaExpressSSR.OnewayGDSConnectingFlight()[pri:0, instance:ScenarioBasedFlightScripts.AirIndiaExpressSSR@4b553d26] output={null}]]]>
               </value>
             </param>
           </params>
@@ -110,7 +130,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
             </line>
           </reporter-output>
         </test-method> <!-- postCondition -->
-      </class> <!-- ScenarioBasedFlightScripts.FlyDubaiBook -->
+      </class> <!-- ScenarioBasedFlightScripts.AirIndiaExpressSSR -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>
